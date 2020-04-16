@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/application_nav_graph"
+    app:startDestination="@id/app_dashboardFragment">
+    <fragment
+        android:id="@+id/app_dashboardFragment"
+        android:name="com.example.fitness_prototyp.app_dashboardFragment"
+        android:label="fragment_app_dashboard"
+        tools:layout="@layout/fragment_app_dashboard" >
+        <action
+            android:id="@+id/action_app_dashboardFragment_to_app_settingsFragment"
+            app:destination="@id/app_settingsFragment" />
+        <action
+            android:id="@+id/action_app_dashboardFragment_to_app_commentsFragment"
+            app:destination="@id/app_commentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/app_settingsFragment"
+        android:name="com.example.fitness_prototyp.app_settingsFragment"
+        android:label="fragment_app_settings"
+        tools:layout="@layout/fragment_app_settings" />
+    <fragment
+        android:id="@+id/app_commentsFragment"
+        android:name="com.example.fitness_prototyp.app_commentsFragment"
+        android:label="fragment_app_comments"
+        tools:layout="@layout/fragment_app_comments" />
+</navigation>

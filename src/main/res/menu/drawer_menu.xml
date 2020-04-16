@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/drawer_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:title="@string/drawer_dashboard_string" />
+    <item
+        android:id="@+id/drawer_newUnit"
+        android:icon="@drawable/ic_new_unit"
+        android:title="@string/drawer_newUnit_string" />
+    <item
+        android:id="@+id/drawer_comments"
+        android:icon="@drawable/ic_comments"
+        android:title="@string/drawer_comments_string" />
+    <item
+        android:id="@+id/drawer_exercises"
+        android:icon="@drawable/ic_accessibility_black_24dp"
+        android:title="@string/drawer_exercises_string" />
+    <item
+        android:id="@+id/drawer_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/drawer_settings_string" />
+</menu>

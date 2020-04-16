@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".logIn_loginFragment"
+    android:background="@color/fragmentColors">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="159dp"
+            android:layout_marginLeft="159dp"
+            android:layout_marginTop="99dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginRight="159dp"
+            android:text="@string/start_log_in"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/black"
+            app:fontFamily="sans-serif-medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/logIn_eMail_eddit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:ems="10"
+            android:hint="@string/logIn_eMail_hint"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/logIn_password_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:ems="10"
+            android:hint="@string/logIn_password_hint"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logIn_eMail_eddit" />
+
+        <Button
+            android:id="@+id/logIn_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/start_log_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logIn_password_edit" />
+
+        <Button
+            android:id="@+id/logIn_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/logIn_cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logIn_password_edit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

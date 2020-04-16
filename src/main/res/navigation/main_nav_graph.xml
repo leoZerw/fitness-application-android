@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/logIn_startFragment">
+
+    <fragment
+        android:id="@+id/logIn_startFragment"
+        android:name="com.example.fitness_prototyp.logIn_startFragment"
+        android:label="fragment_log_in_start"
+        tools:layout="@layout/fragment_log_in_start" >
+        <action
+            android:id="@+id/action_logIn_startFragment_to_logIn_registerFragment"
+            app:destination="@id/logIn_registerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_logIn_startFragment_to_logIn_loginFragment"
+            app:destination="@id/logIn_loginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/logIn_loginFragment"
+        android:name="com.example.fitness_prototyp.logIn_loginFragment"
+        android:label="fragment_log_in_login"
+        tools:layout="@layout/fragment_log_in_login" />
+    <fragment
+        android:id="@+id/logIn_registerFragment"
+        android:name="com.example.fitness_prototyp.logIn_registerFragment"
+        android:label="fragment_log_in_register"
+        tools:layout="@layout/fragment_log_in_register" />
+</navigation>
